@@ -1052,16 +1052,6 @@ async def list_available_methods(device: ShellyDevice) -> None:
 
 
 # ============================
-# Utility Exception Classes
-# ============================
-
-
-class RescanWithNewFiltersException(Exception):
-    """Custom exception to handle rescan with new filters."""
-    pass
-
-
-# ============================
 # Entry Point
 # ============================
 
