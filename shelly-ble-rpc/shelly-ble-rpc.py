@@ -13,7 +13,8 @@ import argparse
 from typing import Any, Dict, Optional, Tuple, List
 from dataclasses import dataclass
 
-from bleak import BleakClient, BleakError, BleakScanner
+from bleak import BleakClient, BleakScanner
+from bleak.exc import BleakError
 from bleak.backends.device import BLEDevice
 from bleak.backends.scanner import AdvertisementData
 from colorama import Fore, Style, init as colorama_init
