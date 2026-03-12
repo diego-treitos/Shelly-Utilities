@@ -392,7 +392,6 @@ class ShellyDevice:
     async def retrieve_shelly_service(self, client: BleakClient) -> None:
         """Retrieves the Shelly GATT service from the BLE client."""
         try:
-            await client.get_services()
             services = client.services
             self.shelly_service = services.get_service(SHELLY_GATT_SERVICE_UUID)
             if self.shelly_service is None:
